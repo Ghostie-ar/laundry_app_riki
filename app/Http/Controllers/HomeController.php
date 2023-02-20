@@ -8,6 +8,10 @@ class HomeController extends Controller
 {
     //
     public function index(){
-        return view('template.index');
+        return view('index');
+    }
+    
+    public function produk(){
+        return view('produk.data-produk');
     }
 }

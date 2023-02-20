@@ -9,6 +9,11 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/coinex.css?v=1.0.0">
+
+    <link rel="stylesheet" href="assets-2/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets-2/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets-2/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
 </head>
 
 <body class=" ">
@@ -63,7 +68,7 @@
                                         stroke-linejoin="round"></path>
                                 </svg>
                             </i>
-                            <span class="item-name">Home</span>
+                            <span class="item-name">Data Crud</span>
                             <i class="right-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -82,11 +87,11 @@
                                         </svg>
                                     </i>
                                     <i class="sidenav-mini-icon"> U </i>
-                                    <span class="item-name">User Profile</span>
+                                    <span class="item-name">Outlet</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="dashboard/app/user-add.html">
+                                <a class="nav-link " href="produk">
                                     <i class="icon">
                                         <svg width="10" viewBox="0 0 12 13" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +99,7 @@
                                         </svg>
                                     </i>
                                     <i class="sidenav-mini-icon"> U </i>
-                                    <span class="item-name">User Edit</span>
+                                    <span class="item-name">Produk</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -106,7 +111,7 @@
                                         </svg>
                                     </i>
                                     <i class="sidenav-mini-icon"> U </i>
-                                    <span class="item-name">User List</span>
+                                    <span class="item-name">User</span>
                                 </a>
                             </li>
                         </ul>
@@ -119,6 +124,7 @@
         </div>
     </aside>
     <main class="main-content">
+
         <div class="position-relative">
             <!--Nav Start-->
             <nav class="nav navbar navbar-expand-lg navbar-light iq-navbar border-bottom">
@@ -307,8 +313,8 @@
                                     <img src="assets/images/avatars/01.png" alt="User-Profile"
                                         class="img-fluid avatar avatar-50 avatar-rounded">
                                     <div class="caption ms-3 ">
-                                        <h6 class="mb-0 caption-title">Wade Warren</h6>
-                                        <p class="mb-0 caption-sub-title">Super Admin</p>
+                                        <h6 class="mb-0 caption-title">Ghostie</h6>
+                                        <p class="mb-0 caption-sub-title">Admin</p>
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -330,6 +336,7 @@
             <!--Nav End-->
         </div>
         <div class="container-fluid content-inner pb-0">
+         @yield('content')
 
 
             <!-- Wrapper End-->
@@ -345,6 +352,17 @@
             <script src="assets/js/app.js"></script>
             <!-- apexchart JavaScript -->
             <script src="assets/js/charts/apexcharts.js"></script>
+
+            <script src="assets-2/plugins/jquery/jquery.min.js"></script>
+            <script src="assets-2/plugins/datatables/jquery.dataTables.js"></script>
+
+            <!-- Bootstrap 4 -->
+            <script src="assets-2/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- AdminLTE App -->
+            <script src="assets-2/dist/js/adminlte.min.js"></script>
+            <!-- AdminLTE for demo purposes -->
+            <script src="assets-2/dist/js/demo.js"></script>
+            <script src="assets-2/js/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
